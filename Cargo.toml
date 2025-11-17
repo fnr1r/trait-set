@@ -17,8 +17,10 @@ proc-macro = true
 
 [dependencies]
 syn = "1.0"
-quote = "1.0"
-proc-macro2 = "1.0"
+quote = "=1.0.40"
+proc-macro2 = "=1.0.101"
 
 [dev-dependencies]
 trybuild = "1.0"
+# this is to prevent cargo update from updating to unsupported versions
+glob = "=0.3.2"
